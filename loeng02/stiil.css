@@ -1,13 +1,18 @@
-form {
-    background-color: lightcyan;
-    color: red;
-
-} 
-
-#kasutajanimi {
-    background-color: brown;
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-.silt {
-    font-weight: 600;
+.sisselogimiskast {
+    background-color: lightgray;
+    width: 300px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
