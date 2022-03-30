@@ -1,0 +1,54 @@
+.konteiner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lai {
+    display: block;
+}
+
+.tablet,
+.mobiil {
+    display: none;
+}
+
+.blokk {
+    margin: 0px;
+    width: 33%;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Tableti vaade */
+
+@media screen and (max-width: 1007px) {
+    .tablet {
+        display: block;
+    }
+    .lai,
+    .mobiil {
+        display: none;
+    }
+    .blokk {
+        width: 50%;
+    }
+}
+
+
+/* Mobiili vaade */
+
+@media screen and (max-width: 640px) {
+    .mobiil {
+        display: block;
+    }
+    .lai,
+    .tablet {
+        display: none;
+    }
+    .blokk {
+        width: 100%;
+    }
+}

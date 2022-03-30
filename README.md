@@ -8,3 +8,5 @@
 [Kodutöö 3](https://mihkelvali.github.io/veeb2203/loeng03/kodune03)
 
 [Loeng 4](https://mihkelvali.github.io/veeb2203/loeng04)
+
+[Loeng 5](https://mihkelvali.github.io/veeb2203/loeng05)
