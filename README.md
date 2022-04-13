@@ -13,6 +13,8 @@
 
 [Loeng 6](https://mihkelvali.github.io/veeb2203/loeng06)
 
+[Loeng 8](https://mihkelvali.github.io/veeb2203/loeng08)
+
 [Matkaklubi](https://mihkelvali.github.io/veeb2203/matkaklubi)
 
 TEST TEST
