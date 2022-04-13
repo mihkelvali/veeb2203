@@ -1,3 +1,4 @@
+html,
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -102,8 +103,8 @@ body {
     top: -200px;
     right: -280px;
     z-index: 1;
+    box-shadow: 0px 200px 160px -75px rgb(0 0 0 / 40%);
 }
-
 
 .vari {
     width: 750px;
@@ -115,4 +116,105 @@ body {
     position: absolute;
     bottom: -350px;
     right: -280px;
+}
+
+.kaartide-sektsioon {
+    margin-top: 150px;
+    padding-left: 72px;
+    margin-bottom: 200px;
+}
+
+.pealkirjad {
+    display: flex;
+    flex-direction: column;
+}
+
+.pealkirjad>h4 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1.08px;
+}
+
+.pealkirjad>h1 {
+    letter-spacing: -1.08px;
+    color: black;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 0.9;
+}
+
+.tekst-ja-kaardid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    line-height: 1.7;
+}
+
+.tekst {
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nooled {
+    display: flex;
+    align-items: end;
+    margin-bottom: -14px;
+}
+
+.nool {
+    font-size: 46px;
+    cursor: pointer;
+    margin-bottom: -13px
+}
+
+.esimene-number {
+    margin-left: 10px;
+    font-size: 33px;
+}
+
+.teine-number {
+    font-size: 21px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #9A9A9A;
+}
+
+.kaardid {
+    display: flex;
+    width: auto;
+    margin-right: -100px;
+}
+
+.esimene-pilt,
+.teine-pilt,
+.kolmas-pilt {
+    height: 406px;
+    width: 309px;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 34px;
+    box-shadow: #bbb 0px 0px 30px;
+}
+
+.esimene-pilt {
+    background-image: url("assets/binokkel-tydruk.png");
+}
+
+.teine-pilt {
+    background-image: url("assets/binokkel-poiss.png");
+}
+
+.kolmas-pilt {
+    background-image: url("assets/kaart-poisid.png");
+    margin-right: -50px;
 }
