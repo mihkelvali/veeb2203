@@ -15,6 +15,14 @@
 
 [Loeng 8](https://mihkelvali.github.io/veeb2203/loeng08)
 
+[Loeng 9/Puuviljad](https://mihkelvali.github.io/veeb2203/loeng09/puuviljad)
+
+[Loeng 9/Todo](https://mihkelvali.github.io/veeb2203/loeng09/todo)
+
+[Kodutöö 9](https://mihkelvali.github.io/veeb2203/loeng09/kodune09)
+
+[Loeng 10](https://mihkelvali.github.io/veeb2203/loeng10)
+
 [Matkaklubi](https://mihkelvali.github.io/veeb2203/matkaklubi)
 
 TEST TEST
