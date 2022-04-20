@@ -2,17 +2,40 @@ const todosListElement = document.getElementById('todos-list');
 const emptyListElement = document.getElementById('empty-list');
 const inputElement = document.getElementById('todo-input');
 
-const todos = [
-    {
-        title: 'asdf',
+let id = 0;
+const todos = [];
+
+addTodo('Task 1');
+addTodo('Task 2');
+addTodo('Task 3');
+renderList();
+
+function addTodo(newTitle) {
+    const newTodo = {
+        id: id,
+        title: newTitle,
         isDone: false,
-    }
-];
+    };
+    todos.push(newTodo);
+    id++;
+}
+
+function toggleIsDone(clickedId) {
+    const index = todos.findIndex((todo) => todo.id == clickedId);
+    todos[index].isDone = !todos[index].isDone;
+    renderList();
+}
+
+function deleteTodo(clickedId) {
+    const index = todos.findIndex((todo) => todo.id == clickedId);
+    todos.splice(index, 1);
+    renderList();
+}
 
 function renderList() {
     if (todos.length == 0) {
         todosListElement.style.display = 'none';
-        emptyListElement.style.display = 'block';
+        emptyListElement.style.display = 'flex';
     } else {
         emptyListElement.style.display = 'none';
         todosListElement.style.display = 'block';
@@ -20,10 +43,14 @@ function renderList() {
 
     todosListElement.innerHTML = '';
     for (let i = 0; i < todos.length; i++) {
+        let todoTitleClass = 'todo-title';
+        if (todos[i].isDone) {
+            todoTitleClass += ' todo-done';
+        }
         todosListElement.innerHTML += `
             <div class="todo">
-                <div class="todo-title">${todos[i]}</div>
-                <div class="todo-delete">x</div>
+                <div onclick="toggleIsDone(${todos[i].id})" class="${todoTitleClass}">${todos[i].title}</div>
+                <div onclick="deleteTodo(${todos[i].id})" class="todo-delete">x</div>
             </div>
         `;
     }
@@ -32,25 +59,9 @@ function renderList() {
 inputElement.addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
         if (inputElement.value != '') {
-            todos.push({
-                title: inputElement.value,
-                isDone: false,
-            });
+            addTodo(inputElement.value);
             inputElement.value = '';
             renderList();
         }
     }
 });
-
-renderList();
-
-/*
-<div class="todo">
-    <div class="todo-title">Pese hambad</div>
-    <div class="todo-delete">x</div>
-</div>
-<div class="todo">
-    <div class="todo-title todo-done">Vii prügi välja</div>
-    <div class="todo-delete">x</div>
-</div>
-*/
