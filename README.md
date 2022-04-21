@@ -25,5 +25,3 @@
 
 [Matkaklubi](https://mihkelvali.github.io/veeb2203/matkaklubi)
 
-TEST TEST
-
